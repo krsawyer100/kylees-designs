@@ -54,15 +54,24 @@ p {
 
 .header__nav_logo-img {
     width: 50px;
+    transition: 0.25s;
 }
 
 .header__nav_links {
     font-size: 14pt;
     font-weight: 400;
-    max-width: 40%;
+    min-width: 30%;
     column-gap: 30px;
     justify-content: space-between;
     align-items: center;
+    list-style-type: none;
+}
+
+.header__nav_links-link > a {
+    text-decoration: none;
+    color: var(--primary);
+    position: relative;
+    transition: 0.25s;
 }
 
 .header__nav_logo-img:hover {
@@ -71,11 +80,29 @@ p {
     scale: .98;
 }
 
-.header__nav_links-link:hover {
-    font-size: 13.8pt;
-    text-decoration: underline;
+.header__nav_links-link > a:hover {
     color: var(--secondary);
+    font-size: 13.8pt;
 }
+
+.header__nav_links-link > a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: var(--secondary);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: .25s linear;
+}
+
+.header__nav_links-link > a:hover::before, .header__nav_links-link > a:focus::before {
+    visibility: visible;
+    transform: scaleX(1);
+} 
 
 /* main hero section */
 .main__hero {
@@ -111,3 +138,5 @@ emphasize {
     color: var(--primary);
     font-weight: 500;
 }
+
+/* animations */
