@@ -1,0 +1,113 @@
+:root {
+    --primary: #2e7da0;
+    --secondary: #5B7553;
+    --white: #fffffa;
+    --text: #000000;
+}
+
+body {
+    margin: 0 auto; 
+    padding: 0;
+    border: 0;
+    background-color: var(--white);
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 12pt;
+}
+
+h1 {
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14pt;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Navigation Bar */
+.header {
+    background-color: var(--white);
+    border-bottom: var(--primary) solid 3px;
+    position: sticky;
+}
+.header__nav_logo, .header__nav_links > a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.header__nav {
+    padding: 15px 0;
+    margin: 0 50px;
+    align-items: center;
+}
+
+.header__nav_logo {
+    margin-right: auto;
+    align-items: center;
+}
+
+.header__nav_logo-img {
+    width: 50px;
+}
+
+.header__nav_links {
+    font-size: 14pt;
+    font-weight: 400;
+    max-width: 40%;
+    column-gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav_logo-img:hover {
+    content: url(images/nav-logo-green.png);
+    width: 50px;
+    scale: .98;
+}
+
+.header__nav_links-link:hover {
+    font-size: 13.8pt;
+    text-decoration: underline;
+    color: var(--secondary);
+}
+
+/* main hero section */
+.main__hero {
+    background-image: url(images/hero-background.png);
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    border-bottom: var(--primary) solid 3px;
+}
+
+.main__hero_img-container {
+    margin: 25px 25px 0 50px;
+}
+
+.main__hero_description-container {
+    flex-direction: column;
+    width: 30%;
+    padding: 25px;
+    margin: 25px 50px 25px 25px;
+    border: var(--primary) solid 5px;
+    border-radius: 20px;
+    align-self: center;
+    background-color: var(--white);
+}
+
+.main__hero_description-container > h1 {
+    margin-bottom: 0;
+    color: var(--primary);
+}
+
+emphasize {
+    color: var(--primary);
+    font-weight: 500;
+}
