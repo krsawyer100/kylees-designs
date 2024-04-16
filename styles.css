@@ -60,8 +60,8 @@ p {
 .header__nav_links {
     font-size: 14pt;
     font-weight: 400;
-    min-width: 30%;
-    column-gap: 30px;
+    max-width: 40%;
+    column-gap: 35px;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
@@ -115,14 +115,14 @@ p {
 }
 
 .main__hero_img-container {
-    margin: 35px 25px 0 50px;
+    margin: 35px 35px 0 50px;
 }
 
 .main__hero_description-container {
     flex-direction: column;
     width: 30%;
     padding: 15px 35px;
-    margin: 35px 50px 35px 25px;
+    margin: 35px 50px 35px 35px;
     border: var(--primary) solid 5px;
     border-radius: 20px;
     align-self: center;
