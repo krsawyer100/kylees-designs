@@ -109,11 +109,9 @@ p {
     background-image: url(images/hero-background.png);
     background-size: auto 100vh;
     background-repeat: space;
-    background-position: 0% center;
+    background-position: center;
     justify-content: center;
     border-bottom: var(--primary) solid 3px;
-    animation: hero-background 40s linear infinite alternate;
-    overflow: hidden;
 }
 
 .main__hero_img-container {
@@ -139,10 +137,4 @@ p {
 emphasize {
     color: var(--primary);
     font-weight: 500;
-}
-
-/* animations */
-@keyframes hero-background {
-    from { background-position: 100% center; }
-    to { background-position: 0% center; }
 }
