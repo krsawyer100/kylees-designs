@@ -65,7 +65,7 @@ a {
 }
 
 .header__nav_logo-img {
-    width: 50px;
+    height: 65px;
     transition: 0.25s;
 }
 
@@ -87,8 +87,8 @@ a {
 }
 
 .header__nav_logo-img:hover {
-    content: url(images/nav-logo-green.png);
-    width: 50px;
+    content: url(images/nav-logo-hover\ copy.png);
+    height: 65px;
     scale: .98;
 }
 
@@ -299,7 +299,7 @@ emphasize {
 
 .main__projects_portfolio-link { 
     margin: 0 100px;
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 /* Main work section */
