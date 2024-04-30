@@ -1,6 +1,7 @@
 :root {
     --primary: #2e7da0;
-    --secondary: #d5e5e6;
+    --primary-light: #d5e5e6;
+    --secondary: #2B2D42;
     --white: #fffff8;
     --text: #000000;
 }
@@ -210,6 +211,7 @@ emphasize {
     margin: 0 0 25px 0;
     margin-right: auto;
     justify-self: flex-start;
+    color: var(--primary);
 }
 
 .main__skillset_img {
@@ -246,7 +248,9 @@ emphasize {
 .main__skillset_skills_list-item_img{
     width: 20px;
 }
-
+.main__skillset_skills_list-item_title {
+    color: var(--secondary);
+}
 .main__skillset_skills_list-item_body{
     font-size: 10pt;
 }
@@ -255,16 +259,13 @@ emphasize {
 .main__projects {
     height: 650px;
     width: 100%;
-    background-image: url(images/hero-background.png);
-    background-size: auto 875px;
-    background-repeat: repeat;
-    margin: 0 25px;
+    background-color: var(--primary-light);
     flex-direction: column;
 }
 
 .main__projects_title {
     margin: 50px 100px 25px;
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 .main__projects_section {
@@ -279,7 +280,7 @@ emphasize {
     width: 250px;
     height: 350px;
     background-color: var(--white);
-    border: var(--primary) solid 4px;
+    border: var(--secondary) solid 4px;
     border-radius: 5%;
     padding: 5px 20px;
     align-items: center;
@@ -333,7 +334,7 @@ emphasize {
 }
 
 .main__work_form-input {
-    background-color: var(--secondary);
+    background-color: var(--primary-light);
     width: 400px;
     height: 20px;
     padding: 5px 10px;
@@ -348,7 +349,7 @@ emphasize {
 }
 
 .main__work_form-input::placeholder {
-    color: var(--text);
+    color: var(--secondary);
     font-family: "Poppins", sans-serif;
     font-size: 10pt;
 }
@@ -356,7 +357,8 @@ emphasize {
 .main__work_form-button {
     font-family: "Poppins", sans-serif;
     font-size: 12pt;
-    background-color: var(--secondary);
+    background-color: var(--primary-light);
+    color: var(--secondary);
     border: none;
     margin-top: 25px;
     width: 420px;
