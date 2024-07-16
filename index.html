@@ -3,148 +3,29 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Kylee's Designs</title>
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav flex">
-            <a href="index.html" class="header__nav_logo flex">
-                <img src="images/nav-logo-blue copy.png" alt="Kylee's Designs Logo" class="header__nav_logo-img">
-            </a>
-            <ul class="header__nav_links flex">
-                <li class="header__nav_links-link">
-                    <a href="about.html">About</a>
-                </li>
-                <li class="header__nav_links-link">
-                    <a href="portfolio.html">Projects</a>
-                </li>
-                <li class="header__nav_links-link">
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
+        <nav class="header__nav">
+            <a href="index.html" class="header__nav_logo">Kylee's Designs</a>
+            <div class="header__nav_links-container">
+                <a href="about.html" class="header__nav_link">About</a>
+                <a href="portfolio.html" class="header__nav_link">Portfolio</a>
+                <a href="contact.html" class="header__nav_link">Contact</a>
+            </div>
         </nav>
     </header>
+
     <main class="main">
-        <section class="main__hero flex">
-            <div class="main__hero_img-container flex">
-                <img src="images/hero-illustration.png" alt="illustration of Kylee" class="main__hero_img">
-            </div>
-            <div class="main__hero_description-container flex">
-                <h1>Hello,</h1>
-                <p>
-                    I am Kylee, a web design graduate student from North Carolina. I currently work as a freelancer design researcher with <emphasize>Edgeview Creative</emphasize>.
-                </p>
-            </div>
-        </section>
-        <section class="main__values flex">
-            <div class="main__values_text flex">
-                <h2 class="main__values_text-title">Philosphy & Values</h2>
-                <p class="main__values_text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vero eum porro quasi beatae dolore optio laboriosam adipisci! Eum soluta dolores est, quae assumenda provident. Voluptatibus consectetur eaque enim dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse vero eum porro quasi beatae dolore optio laboriosam adipisci! Eum soluta dolores est, quae assumenda provident. Voluptatibus consectetur eaque enim dicta.</p>
-                <a href="about.html" class="main__values_text-link">More About Me</a>
-            </div>
-            <div class="main__values_img-container flex">
-                <img src="images/values-illustration.png" alt="illustration of Kylee thinking" class="main__values_img">
-            </div>
-        </section>
-        <section class="main__skillset flex">
-            <div class="main__skillset_img-container flex">
-                <h2 class="main__skillset-title">Skillset</h2>
-                <img src="images/skillset-illustration.png" alt="illustration of Kylee working" class="main__skillset_img">
-            </div>
-            <div class="main__skillset_container flex">
-                <div class="main__skillset_skills flex">
-                    <ul class="main__skillset_skills_list flex">
-                        <li class="main__skillset_skills_list-item">
-                            <img src="" alt="" class="main__skillset_skills_list-item_img">
-                            <h3 class="main__skillset_skills_list-item_title">Skill</h3>
-                            <p class="main__skillset_skills_list-item_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut consequatur accusamus laboriosam expedita ipsam consectetur fugit, delectus dignissimos, voluptas alias.</p>
-                        </li>
-                        <li class="main__skillset_skills_list-item">
-                            <img src="" alt="" class="main__skillset_skills_list-item_img">
-                            <h3 class="main__skillset_skills_list-item_title">Skill</h3>
-                            <p class="main__skillset_skills_list-item_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut consequatur accusamus laboriosam expedita ipsam consectetur </p>
-                        </li>
-                        <li class="main__skillset_skills_list-item">
-                            <img src="" alt="" class="main__skillset_skills_list-item_img">
-                            <h3 class="main__skillset_skills_list-item_title">Skill</h3>
-                            <p class="main__skillset_skills_list-item_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut consequatur accusamus laboriosam expedita ipsam consectetur fu</p>
-                        </li>
-                        <li class="main__skillset_skills_list-item">
-                            <img src="" alt="" class="main__skillset_skills_list-item_img">
-                            <h3 class="main__skillset_skills_list-item_title">Skill</h3>
-                            <p class="main__skillset_skills_list-item_body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus ut consequatur accusamus laboriosam expedita ipsam consectetu</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <section class="main__projects flex">
-            <h2 class="main__projects_title">My Projects</h2>
-            <div class="main__projects_section flex">
-                <div class="main__projects_section_containers flex">
-                    <h3 class="main__projects_section_containers-title">Project title</h3>
-                    <img src="" alt="" class="main__projects_section_containers-img">
-                    <p class="main__projects_section_containers-description"></p>
-                </div>
-                <div class="main__projects_section_containers flex">
-                    <h3 class="main__projects_section_containers-title">Project title</h3>
-                    <img src="" alt="" class="main__projects_section_containers-img">
-                    <p class="main__projects_section_containers-description"></p>
-                </div>
-                <div class="main__projects_section_containers flex">
-                    <h3 class="main__projects_section_containers-title">Project title</h3>
-                    <img src="" alt="" class="main__projects_section_containers-img">
-                    <p class="main__projects_section_containers-description"></p>
-                </div>
-                <div class="main__projects_section_containers flex">
-                    <h3 class="main__projects_section_containers-title">Project title</h3>
-                    <img src="" alt="" class="main__projects_section_containers-img">
-                    <p class="main__projects_section_containers-description"></p>
-                </div>
-            </div>
-            <a href="portfolio.html" class="main__projects_portfolio-link">View Full Portfolio Here</a>
-        </section>
-        <section class="main__work flex">
-            <div class="main__work_text">
-                <h2 class="main__work_text-title">Let's Work Together</h2>
-                <p class="main__work_text-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus quis doloribus sint culpa assumenda amet animi, modi eos magni quam vitae vero deserunt a dolores incidunt dolorum sit. Possimus, voluptatum!</p>
-            </div>
-            <form id="contact-form" class="main__work_form flex">
-                <p class="main__work_form_section flex">
-                    <label for="name" class="main__work_form-label">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter first and last name here" class="main__work_form-input">
-                </p>
-                <p class="main__work_form_section flex">
-                    <label for="email" class="main__work_form-label">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Enter email here" class="main__work_form-input"> 
-                </p>
-                <p class="main__work_form_section flex">
-                    <label for="message" class="main__work_form-label">Message</label>
-                    <textarea name="message" id="message" placeholder="Enter inquiry here" class="main__work_form-input"></textarea>
-                </p>
-                <button type="submit" class="main__work_form-button">Submit</button>
-            </form>
-        </section>
+
     </main>
-    <footer class="footer flex">
-        <h4 class="footer__connect">Connect with me:</h4>
-        <div class="footer__connect_info flex">
-            <p class="footer__connect_info-email">kyleereneesawyer@gmail.com</p>
-            <div class="footer__connect_info_socials-container flex">
-                <a href="" class="footer__connect_info_socials-link">
-                    <img src="" alt="" class="footer__connect_info_socials-link_img">
-                </a>
-                <a href="" class="footer__connect_info_socials-link">
-                    <img src="" alt="" class="footer__connect_info_socials-link_img">
-                </a>
-            </div>
-        </div>
+
+    <footer class="footer">
+
     </footer>
 </body>
-<script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
-<script src="index.js"></script>
 </html>
