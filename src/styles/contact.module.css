@@ -1,0 +1,17 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px;
+ }
+
+@media screen and (max-width: 750px) {
+  .contact {
+    padding: 50px 15px;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .contact {
+    padding: 50px 10px;
+  }
+}
