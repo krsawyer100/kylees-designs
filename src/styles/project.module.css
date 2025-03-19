@@ -29,7 +29,28 @@
     color: var(--primary);
 }
 
-.project__link:hover, .project__link:focus {
-    transform: scale(0.98);
-    transition: 800ms;
+.project__link-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    width: 300px;
+    padding-top: 15px;
+}
+
+.project__link-links > a {
+    background-color: var(--primary-light);
+    color: var(--white);
+    text-decoration: none;
+    padding: 8px 10px;
+    font-size: 13px;
+    width: 125px;
+    text-align: center;
+    border-radius: 7px;
+    border: 2px solid var(--primary);
+}
+
+.project__link-links > a:hover, .project__link-links > a:focus {
+    transform: scale(.99);
+    transition: .5s;
 }
